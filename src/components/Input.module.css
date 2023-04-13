@@ -1,0 +1,15 @@
+.input {
+  width: 100px;
+
+  outline-style: none;
+  border: 2px black solid;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.red {
+  background-color: rgb(247, 40, 40);
+
+  color: rgb(12, 8, 8);
+  font-weight: 600;
+}

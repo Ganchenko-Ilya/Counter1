@@ -1,0 +1,23 @@
+.displaySetWrapper {
+  display: flex;
+
+  justify-content: space-around;
+
+  width: 270px;
+  border: 3px solid black;
+  border-radius: 5px;
+  flex-wrap: wrap;
+}
+.displaySetWrapper p {
+  font-size: 16px;
+  margin: 0;
+  font-weight: 600;
+  color: blueviolet;
+}
+.valueWrapper {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  justify-content: space-around;
+  width: 280px;
+}
