@@ -40,3 +40,6 @@
     height: 100vh;
     
 }
+.inputError {
+    background-color: #ffcccc;
+  }
