@@ -3,13 +3,13 @@ import React, { ChangeEvent, useState } from "react";
 import s from "./Input.module.css";
 
 type InputProps = {
-  callBack: (value: string) => void;
-  value: string;
+  callBack: (value: number) => void;
+  value: number;
   error: boolean;
 };
 export const Input = (props: InputProps) => {
   const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
-    props.callBack(e.currentTarget.value);
+    props.callBack(+e.currentTarget.value);
   };
   const classNameInput =
     s.input +

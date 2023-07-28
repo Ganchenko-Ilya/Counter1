@@ -3,16 +3,16 @@ import s from "./DisplaySet.module.css";
 import { Input } from "./Input";
 
 type DisplaySetProps = {
-  maxValue: string;
-  minValue: string;
-  addError: (valueMin: string, valueMax: string) => void;
+  maxValue: number;
+  minValue: number;
+  addError: (valueMin: number, valueMax: number) => void;
   error: boolean;
 };
 export const DisplaySet = (props: DisplaySetProps) => {
-  const callBackHandlerMin = (value: string) => {
+  const callBackHandlerMin = (value: number) => {
     props.addError(value, props.maxValue);
   };
-  const callBackHandlerMax = (value: string) => {
+  const callBackHandlerMax = (value: number) => {
     props.addError(props.minValue, value);
   };
 
